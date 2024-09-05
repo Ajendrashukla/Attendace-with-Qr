@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+</head>
+<body>
+    <CENTER>
+    <h2>Welcome to QR Attendance System</h2>
+    <h3>Links :</h3>
+     <li>
+        <ul>Scan the QR</ul>
+    </li>
+    {%if QR%}
+    <img src="{{url_for('static',filename='/tempqr/qr_code.png')}}" alt="">
+    {%endif%}
+</CENTER>
+    </body>
+</html>
